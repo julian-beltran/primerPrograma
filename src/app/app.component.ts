@@ -6,28 +6,28 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  public title: string = 'Primer programa Angular';
+  public title = 'Primer programa Angular';
   numero1: number;
   numero2: number;
   resultado: number;
 
-  //var let const
+  // var let const
   public operar(op: string): void{
-     switch(op){
+     switch (op){
            case 's':
              this.resultado = this.numero1 + this.numero2;
              break;
            case 'r':
-              this.resultado = this.numero1 - this.numero2;   
-              break; 
+              this.resultado = this.numero1 - this.numero2;
+              break;
            case 'm':
               this.resultado = this.numero1 * this.numero2;
               break;
            case 'd':
-              this.resultado = this.numero1 / this.numero2;    
-              break;   
+              this.resultado = this.numero1 / this.numero2;
+              break;
             default:
-              this.resultado = 0;                 
+              this.resultado = 0;
       }
   }
 }
