@@ -1,2 +1,14 @@
-hello word
-<app-login></app-login>
+Calculadora julian
+<br>
+<input type="number"[(ngModel)]="numero1" /> {{numero1}}<br>
+<input type="number"[(ngModel)]="numero2" /> {{numero2}}<br>
+<input type="button" value="sumar"(click)="operar('s')">
+<input type="button" value="Restar" (click)="operar('r')">
+<input type="button" value="Multiplicar" (click)="operar('m')">
+<button type="button" (click)="operar('d')">Dividir</button>
+<br>
+{{ resultado }}
+<br>
+<br>
+<br>
+<app-login [resultadoHija]="resultado"></app-login>
